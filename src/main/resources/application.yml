@@ -13,4 +13,3 @@ spring:
     hiddenmethod:
     filter:
       enabled: true
-  
