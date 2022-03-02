@@ -9,3 +9,4 @@ spring:
     console:
       enabled: true
       debug: true
+      
