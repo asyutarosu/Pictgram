@@ -1,6 +1,8 @@
 spring:
   jpa:
-    database: POSTGRESQL 
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: create 
 
   datasource:
     platform: postgres
