@@ -1,13 +1,5 @@
 spring:
-  jpa:
-    database: POSTGRESQL
-    hibernate:
-      ddl-auto: create 
-
-  datasource:
-    platform: postgres
-    url: jdbc:postgresql://localhost:5432/board
-    username: board
-    password: password
-  database:
-    driverClassName: org.postgresql.Driver
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
