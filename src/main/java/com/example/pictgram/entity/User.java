@@ -90,4 +90,8 @@ public class User extends AbstractEntity implements UserDetails, UserInf {
     public Long getUserId() {
     	return userId;
     }
+    
+    public String getUsername() {
+    	return username;
+    }
 }
