@@ -9,4 +9,7 @@ spring:
     console:
       enabled: true
       debug: true
+  
+  image:
+    local: true
       
