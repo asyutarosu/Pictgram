@@ -10,5 +10,12 @@ spring:
       debug: true
   
 image:
-  local: true
-      
+  local: false
+
+cloud:
+  aws:
+    stack:
+      auto: false
+    region:
+      auto: false
+      static: ap-northeast-1
