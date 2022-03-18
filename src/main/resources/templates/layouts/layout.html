@@ -31,7 +31,17 @@
 		crossorigin="anonymous"></script>
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	 <script src="/scripts/method-convert.js" th:src="@{/scripts/method-convert.js}"></script>
+	<script src="/scripts/method-convert.js"
+		th:src="@{/scripts/method-convert.js}"></script>
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+	<script th:inline="javascript">
+   window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+      OneSignal.init({
+        appId: "427cdd3a-c7c1-4cb9-b4e9-1014aec4c4b4",
+      });
+    });
+  </script>
 	<script>
 		$(function() {
 			convertMethod('.convert');
