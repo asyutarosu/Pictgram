@@ -24,6 +24,7 @@ public class SessionsController {
         model.addAttribute("hasMessage", true);
         model.addAttribute("class", "alert-danger");
         model.addAttribute("message", messageSource.getMessage("sessions.loginFailure.flash", new String[] {}, locale));
+        
         return "sessions/new";
     }
 
@@ -32,6 +33,7 @@ public class SessionsController {
         model.addAttribute("hasMessage", true);
         model.addAttribute("class", "alert-info");
         model.addAttribute("message", messageSource.getMessage("sessions.logoutComplete.flash", new String[] {}, locale));
+        
         return "layouts/complete";
     }
 }
