@@ -9,4 +9,6 @@ import com.example.pictgram.entity.User;
 public interface UserRepository extends JpaRepository<User, String> {
 
     User findByUsername(String username);
+    //password取得
+    //User dindByPassword(String password);
 }

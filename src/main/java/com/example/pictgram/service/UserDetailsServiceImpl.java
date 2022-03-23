@@ -32,4 +32,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
         return entity;
     }
+    
+    //passwordロード
+    
 }
