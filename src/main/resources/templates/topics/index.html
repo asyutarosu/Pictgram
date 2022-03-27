@@ -16,10 +16,6 @@
 		</style>
 		<script th:inline="javascript">
 	    function initMap() {
-			       new google.maps.Map(document.getElementById("map"), {
-			       center: { lat: -34.397, lng: 150.644 },
-			       zoom: 8,
-			       });
 			       /*[# th:each="topic : ${list}"]*/
 			       /*[# th:if="${topic.latitude != null and topic.longitude != null}"]*/
 			          new google.maps.Map(document.getElementById("map[[${topic.id}]]"), {
@@ -63,7 +59,7 @@
 						</div>
 						<pre class="description" th:text="${topic.description}"></pre>
 						<div class="comments">
-							<h3 class='text-center' th:text="#{topics.index.comment}">驛｢�ｽｧ�ｿｽ�ｽｽ�ｽｳ驛｢譎｢�ｽｽ�ｽ｡驛｢譎｢�ｽｽ�ｽｳ驛｢譎｢�ｽｿ�ｽｽ</h3>
+							<h3 class='text-center' th:text="#{topics.index.comment}">鬩幢ｽ｢�ｿｽ�ｽｽ�ｽｧ�ｿｽ�ｽｿ�ｽｽ�ｿｽ�ｽｽ�ｽｽ�ｿｽ�ｽｽ�ｽｳ鬩幢ｽ｢隴趣ｽ｢�ｿｽ�ｽｽ�ｽｽ�ｿｽ�ｽｽ�ｽ｡鬩幢ｽ｢隴趣ｽ｢�ｿｽ�ｽｽ�ｽｽ�ｿｽ�ｽｽ�ｽｳ鬩幢ｽ｢隴趣ｽ｢�ｿｽ�ｽｽ�ｽｿ�ｿｽ�ｽｽ�ｽｽ</h3>
 							<ul th:each="comment : ${topic.comments}">
 								<li><pre class="description"
 										th:text="${comment.description}"></pre>

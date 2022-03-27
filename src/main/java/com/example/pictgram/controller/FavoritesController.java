@@ -50,7 +50,7 @@ public class FavoritesController {
             list.add(form);
         }
         model.addAttribute("list", list);
-
+        
         return "topics/index";
     }
 
