@@ -5,4 +5,7 @@ public interface UserInf {
     Long getUserId();
 
     String getUsername();
+    
+    //password設計
+    //String getPassword();
 }
