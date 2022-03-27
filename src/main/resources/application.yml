@@ -37,3 +37,6 @@ cloud:
 
 onesignal:
   id: ${onesignal.id}
+
+googlemap:
+  key: ${googlemap.key}
